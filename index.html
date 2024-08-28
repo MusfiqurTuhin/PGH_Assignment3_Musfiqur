@@ -4,8 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+   
+    <script
+      src="https://kit.fontawesome.com/bbfc4be646.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+ 
+
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'body-color':'#ffffff00',
+              'another-bg':'rgb(244, 244, 244);'
+            },
+            backgroundImage: {
+              "custom-image": "url('./assets/bg.jpg')",
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      .manrope-st {
+             font-family: "Manrope", sans-serif;
+ 
+             }
+    </style>
+
+
 </head>
 <body>
-    <h1>Hi</h1>
+
+    <header class="m-10 mx-auto">
+        <nav>
+            <div class="navbar bg-base-100 flex justify-around items-center">
+                <div class="flex items-center">
+                    <i class="fa-sharp fa-solid fa-arrow-right -rotate-45 bg-lime-500 rounded-full text-xl flex items-center justify-center h-8 w-8"></i>
+                    <h3 class="text-3xl font-bold ml-2">Rinterio</h3>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 flex gap-4">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li class="lg:hidden"><a href="#"><i class="fa-duotone fa-solid fa-bars text-2xl"></i></a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-8">
+                    <ul class="flex items-center gap-4">
+                        <li class="hidden lg:block"><a href="#"><i class="fa-duotone fa-solid fa-magnifying-glass text-2xl bg-gray-300 rounded-full flex items-center justify-center h-8 w-8 p-2 border-gray-600"></i></a></li>
+                        <li class="hidden lg:block"><a href="#"><i class="fa-duotone fa-solid fa-cart-shopping text-2xl bg-gray-300 rounded-full flex items-center justify-center h-8 w-8 p-2"></i></a></li>
+                        <li class="hidden lg:block"><a href="#"><div class="flex items-center bg-lime-200 rounded-xl p-2 font-bold text-xl">Book Consult <i class="fa-sharp fa-solid fa-arrow-right -rotate-45 bg-lime-600 rounded-full text-xl flex items-center justify-center h-8 w-8"></i></div></a></li>
+                        <li class="lg:hidden"><a href="#"><i class="fa-solid fa-bars text-3xl bg-gray-300 rounded-full flex items-center justify-center h-8 w-8 p-2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="flex items-center justify-center">
+            <div class="mx-auto p-7">
+                <div class="flex items-center justify-center">
+                    <img src="assets/banner.png" alt="Banner Image">
+                </div>
+                <div class="text-center mt-5">
+                    <h1 class="lg:text-5xl sm:text-3xl font-bold">A barn house of this design has a<br>striking appearance</h1>
+                    <p class="w-4/5 lg:mx-72 mt-9">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <div class="flex items-center justify-center mt-8">
+                        <div class="flex items-center bg-lime-200 w-40 font-bold p-1 rounded-2xl text-xl cursor-pointer">
+                            View Details <i class="fa-sharp fa-solid fa-arrow-right -rotate-45 bg-lime-500 rounded-full text-xl flex items-center justify-center h-8 w-8 ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    
+
+
 </body>
 </html>
